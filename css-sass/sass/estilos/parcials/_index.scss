@@ -1,0 +1,185 @@
+/* Inicio index */
+
+.seccion {
+  &__container {
+    background-image: linear-gradient(salmon, rgb(201, 133, 125));
+    opacity: 90%;
+    margin: 10rem 0 0rem 0;
+    width: 100%;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+  
+}
+
+  &__frase {
+      font-family: "Barlow", sans-serif;
+      font-size: 3.8rem;
+      letter-spacing: 0.094rem;
+      padding-top: 4.5rem;
+      margin-bottom: 1rem;
+      height: auto;
+      text-align: left;
+      transition: .5s;
+      
+  }
+  &__frase:hover{
+    color: black;
+  }
+
+  &__subfrase {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.6rem;
+    color: rgb(216, 216, 216);
+    margin-top: 20%;
+    padding-bottom: 5rem;
+  }
+}
+/*carrusel*/
+
+.carousel-item > img {
+  object-fit: cover;
+  width: 100%;
+  margin: 0rem 0 0rem 0;
+  padding: 0rem;
+  height: calc(80vh - 8px);
+  
+}
+
+.carousel-item h5 {
+  color: black;
+font-family:"Barlow Condensed", sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 0.1rem;
+  padding-bottom: 0rem;
+  text-align: center;
+
+ }
+
+ .carousel-item p {
+  color:salmon;
+  font-family:"Barlow Condensed", sans-serif;
+ font-size: 2rem;
+ margin: 0rem;
+ text-align: center;
+
+ }
+
+/* fin carrusel */
+
+/* inicio newsletter */
+.newsletter {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  padding: 5rem;
+  color: black;
+  background-image:linear-gradient(rgb(79, 141, 143), rgb(132, 189, 190));
+  opacity: 80%;
+  box-shadow: 0 0 1.3rem 0 rgb(255, 255, 255, .3);
+
+  &__container {
+    margin-left:15%;
+    display: flex;
+    flex-direction: column;   
+    width: 100%;
+  }
+
+  &__email{
+    padding: auto;
+    width: 30rem;
+    text-align: center;
+}
+
+}
+  .boton {
+    color: #138d75;
+}
+
+/* fin newsletter */
+
+/*Media queries*/
+
+/*pantalla pequeña */
+
+ @media (max-width: 500px) {
+  .seccion {
+    &__container {
+      background-image: linear-gradient(salmon,rgb(219, 146, 138));
+      opacity: 90%;
+      margin: 10rem 0 0rem 0;
+      width: 100%;
+      padding-bottom: 5rem;
+      padding-left: 3rem;
+     
+    }
+    &__frase {
+      font-family: "Barlow", sans-serif;
+      font-size: 2rem;
+      letter-spacing: 0.094rem;
+      padding-top: 2.5rem;
+      margin-bottom: 1rem;
+      height: auto;
+      text-align: left;
+    }
+  
+    &__subfrase {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 1.3rem;
+      color: rgb(216, 216, 216);
+      margin-top: 20%;
+      padding-bottom: 3rem;
+      text-align: left;
+    }
+  }
+
+  .carousel-item > img {
+    object-fit: cover;
+    width: 100%;
+    margin: 0rem 0 0rem 0;
+    padding: 0rem;
+    height: calc(50vh - 5px);
+    
+  }
+  
+  .carousel-item h5 {
+    color: black;
+    font-family:"Barlow Condensed", sans-serif;
+    font-size: 2rem;
+    margin: auto;
+    
+  }
+  
+  .carousel-item p {
+    color:salmon;
+    font-family:"Barlow Condensed", sans-serif;
+    font-size: 2rem;
+   
+    margin: 0.25rem 0.5rem 1rem 0.5rem;
+  }
+  
+    .newsletter {
+      font-family: "Barlow", sans-serif;
+      font-size: 1rem;
+     padding: 3rem;
+      color: black;
+      background-image:linear-gradient(rgb(79, 141, 143), rgb(132, 189, 190));
+      opacity: 80%;
+      box-shadow: 0 0 1.3rem 0 rgb(255, 255, 255, .3);
+    
+      &__container {
+        margin-left:5%;
+        display: flex;
+        flex-direction: column;   
+        width: 100%;
+      }
+    
+    &__email{
+      padding: auto;
+      width: 15rem;
+      text-align: center;
+    }
+  }
+}  
+
+/*Fin media queries*/
+
+/* fin index */

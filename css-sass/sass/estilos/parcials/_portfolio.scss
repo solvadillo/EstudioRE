@@ -1,0 +1,160 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.portfolio{
+    font-family: "Barlow Condensed", sans-serif;
+    background-image:linear-gradient(rgb(79, 141, 143), rgb(157, 205, 206));
+    
+    &__titulo{
+        font-size:$font-size-titulos;
+        color: white;
+        text-align: center;
+        margin: 5rem;
+        transition: 3s;
+    }
+    &__titulo:hover{
+        font-size: 4rem;
+        color:#d6d686 ;
+    }
+    &__contenedor{
+        width: 90%;
+        max-width: 1000px;
+        overflow: hidden;
+        margin: auto;
+    }  
+            &__contenedor .caja {
+                width: 32%;
+                height: 18.75rem;
+                margin-bottom: 1.25rem;
+                overflow: hidden;
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+            }
+            
+            &__contenedor .caja img {
+                width: 100%;
+                height: 100%;
+                vertical-align: top;
+                object-fit: cover;
+            }
+            
+            &__fotos{
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            
+            img:hover {
+                transform: scale(1.5);
+                transition: all ease 1.5s;
+                cursor: pointer;
+            }
+        
+               .container {
+                 position: relative;
+                 width: 32%;
+                 height: 18.75rem;
+                 margin-bottom: 1.25rem;
+                 display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+              }
+              
+               .image {
+                display: block;
+                width: 100%;
+               height: auto;
+               }
+              
+             .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 100%;
+                 right: 0;
+                background-color:rgb(253, 141, 129);
+                opacity: 90%;
+                 overflow: hidden;
+                width: 0;
+               height: 100%;
+                transition: .5s ease;
+               }
+              
+               .container:hover .overlay {
+                 width: 100%;
+                left: 0;
+               }
+              
+               .text {
+                color: white;
+                font-size: 1.8rem;
+                position: absolute;
+                 top: 50%;
+                 left: 50%;
+                 -webkit-transform: translate(-50%, -50%);
+                 -ms-transform: translate(-50%, -50%);
+                 transform: translate(-50%, -50%);
+                 white-space: nowrap;
+             }
+
+}
+
+/* Media queries*/
+/* Pantalla pequña*/
+
+ 
+ @media (max-width: 600px) { 
+     .portfolio{
+
+    &__fotos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__contenedor .caja {
+        width: 90%;
+        height: 18.75rem;
+        margin-bottom: 1.25rem;
+        overflow: hidden;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    &__titulo{
+        font-size:3rem;
+        color: white;
+        text-align: center;
+        margin: 3rem;
+
+    }
+
+    img:hover {
+        transform: scale(1.5);
+        transition: all ease 1.5s;
+        cursor: pointer;
+    }
+
+       .container {
+         position: relative;
+         width: 90%;
+         height: 18.75rem;
+         margin-bottom: 1.25rem;
+         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }   
+   }
+  }
+    
+/*FIN MEDIA QUERIES*/
+/*FIN ESTILO PORTFOLIO*/
+ 
+ 

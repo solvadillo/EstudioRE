@@ -1,0 +1,183 @@
+/*estilo sección contacto*/
+
+.maincontacto {
+    font-family: "Barlow Condensed", sans-serif;
+    background-image: linear-gradient(#a59450dc , #d6cca3dc);
+    opacity: 90%;
+    color: rgb(214, 206, 194);
+    padding: 0 1.5em;
+    
+}
+
+.contacto {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    font-family: "Barlow Condensed", sans-serif;
+
+    &__titulo{
+        font-size: 3em;
+        text-align: center;
+        color: rgb(27, 27, 27);
+        font-family:'Barlow Condensed', sans-serif;
+        transition: transform 5s;
+    }
+
+    &__titulo:hover{
+        color: black;
+      }
+
+    
+    &__wrapper {
+        box-shadow: 0 0 1.3rem 0 rgb(255, 255, 255, .3);
+        padding: 0rem;
+        font-family: "Barlow Condensed", sans-serif;
+        font-size: 1.5rem;
+
+    } 
+    
+    &__wrapper > * {
+        padding: 1em;
+     }
+    &__form{
+      margin: 0;
+      background-color: rgb(56, 54, 54);
+    }
+
+    &__form form{
+      display: grid;
+      grid-template-columns: 1fr;
+
+     }
+
+    &__form form p {
+      margin: 0;
+      padding: 1rem;
+    }
+
+    &__form form .block {
+         grid-column: 1 / 1;
+        
+    }
+   
+    &__form form textarea{
+        width: 100%;
+        padding: .7em;
+        border:none;
+        background: none;
+        border-bottom:1px solid cadetblue;
+        outline: 0rem;
+        color: whitesmoke;
+
+     }
+  
+    &__enviar{
+        width: 100%;
+        padding: .7em;
+        border:none;
+        background: none;
+        background-color: cadetblue;
+        text-transform: uppercase;
+        padding: 1em;
+        font-size: 1rem;
+        color: white;
+
+    }
+
+    &__enviar:hover,
+        &__enviar:focus {
+            background-color: rgb(68, 117, 119);
+            transition: font-size 1s;
+            font-size: 1.1rem;
+        }
+        &__info  {
+                background-color:rgb(82, 78, 78);
+                font-size: 1.3rem;
+                margin: 0rem;
+        }
+
+    &__info h4 {    
+        text-align: center;
+        margin: 1rem;    
+        color: whitesmoke;
+        font-size: 2rem;
+        }
+        &__lista {
+            list-style: none;
+            font-family: "Barlow Condensed", sans-serif;
+            font: size 2rem; 
+            text-align: left;
+        
+        }
+        &__items{
+            font-family:"Barlow Condensed", sans-serif;
+            padding: 2em;
+            text-align: left;
+            margin: 0.3em;
+        }
+
+        &__iconos{
+            margin: 1rem;
+        }
+        
+        input {
+        width: 100%;
+        padding: .7em;
+        border:none;
+        background: none;
+        border-bottom: 1px solid cadetblue;
+        margin: 1rem;
+        color: whitesmoke;
+
+        }
+
+    }
+    .mapa{
+        padding-top: 10%;
+        margin-top: 5%;
+        width: 100%;
+        background-image:linear-gradient(rgb(79, 141, 143), rgb(132, 189, 190)); 
+    }
+
+
+/* media queris
+
+ pantalla grande*/
+
+@media (min-width: 600px) {
+    
+    .maincontacto {
+        padding: 0 4rem;
+    }
+    
+    .contacto {
+        
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        &__wrapper > * {
+            padding: 2em;
+        }
+        
+    &__form form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+  
+    }
+  
+    &__form form p {
+        margin: 0;
+        padding: 1rem;
+  
+    }
+  
+      &__form form .block {
+          grid-column: 1 / 3;
+          
+      }
+    }
+}
+
+

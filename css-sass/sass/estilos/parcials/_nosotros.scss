@@ -1,0 +1,133 @@
+/*incio seccion nosotros*/
+
+.nosotros {
+   
+  &__seccion {
+    margin-top: 5%;
+    word-spacing: 0.2rem;
+    background-image: linear-gradient(salmon, rgb(201, 133, 125));
+    text-align: center;
+    padding: 4rem;
+    opacity: 90%;
+  }
+
+  &__titulo {
+    font-family: "Barlow", sans-serif;
+    font-size: 3rem;
+    color:rgb(48, 47, 47);
+    transition:  4s; 
+  }
+  &__titulo:hover{
+        color: black;
+        font-size: 3.3rem;
+    }
+  &__frase {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.8rem;
+    color: whitesmoke;
+  }
+ 
+  &__container{
+      display: flex;
+      flex-direction: column;
+  }
+  &__parrafo {
+    font-size: 2rem;
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    margin-top: 3rem;
+  }
+
+  &__equipo {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+    color: #aaaa65 ;
+    transition: 4s;
+  }
+
+  &__equipo:hover{
+      font-size: 3.2rem;
+  }
+  &__hijoequipo {
+    height: 25rem;
+    width: 25rem;
+    margin: 0 1rem 0.3rem 1rem;
+  }
+  &__letra {
+    font-size: 1.8rem;
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    text-align: center;
+  }
+}
+ /*media queries*/
+ /*pantalla pequeña*/
+
+@media (max-width:1000px) {
+
+ .nosotros {
+   
+  &__seccion {
+
+    margin-top: 5%;
+    word-spacing: 0.2rem;
+    background-image: linear-gradient(rgb(219, 146, 138), salmon);
+    text-align: center;
+    padding: 2rem;
+  }
+
+  &__titulo {
+    font-family: "Barlow", sans-serif;
+    font-size: 2rem;
+    color:rgb(66, 65, 65);
+    
+  }
+
+  &__frase {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 1.3rem;
+    color: whitesmoke;
+   
+  }
+
+  &__parrafo {
+    font-size: 1rem;
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    margin-top: 1.5rem;
+  }
+
+  &__equipo {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-rows: 1;
+    -ms-grid-row-align: stretch;
+    color: #aaaa65 ;
+  }
+
+  &__hijoequipo {
+    height: 15rem;
+    width: 15rem;
+    margin: 0.8rem 1rem 0.3rem 3rem;
+    
+  }
+  &__letra {
+    font-size: 1.3rem;
+    font-family: "Barlow Condensed", sans-serif;
+    color: black;
+    text-align: center;
+    padding-bottom: 1rem;
+    height: 18rem;
+    margin-left: 3rem;
+
+  }
+}
+
+}
+
+/*fin media queries*/
+/*fin estilo sección nosotros*/
